@@ -20,7 +20,7 @@ from nltk.util import ngrams
 from nltk.corpus import stopwords
 from nltk.tokenize import RegexpTokenizer
 
-with open(r"C:\Users\Ganesh\Desktop\Tutorials\NLP Material\InputDataForNgram.txt") as inputData:
+with open(r"InputDataForNgram") as inputData:
     data = inputData.read()
 
 dataWithoutPun = RegexpTokenizer(r'\w+')
