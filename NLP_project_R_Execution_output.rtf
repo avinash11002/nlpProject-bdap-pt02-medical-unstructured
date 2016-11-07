@@ -1,0 +1,1008 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22\par
+\par
+           ^\par
+emitter.c:2255:18: note: in expansion of macro \lquote WRITE_BREAK\rquote\par
+             if (!WRITE_BREAK(emitter, string)) return 0;\par
+                  ^\par
+emitter.c: In function \lquote yaml_emitter_write_folded_scalar\rquote :\par
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]\par
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \\\par
+      ^\par
+emitter.c:56:11: note: in expansion of macro \lquote PUT_BREAK\rquote\par
+          (PUT_BREAK(emitter),                                                   \\\par
+           ^\par
+emitter.c:2304:18: note: in expansion of macro \lquote WRITE_BREAK\rquote\par
+             if (!WRITE_BREAK(emitter, string)) return 0;\par
+                  ^\par
+emitter.c:28:6: warning: value computed is not used [-Wunused-value]\par
+      && ((emitter->line_break == YAML_CR_BREAK ?                                \\\par
+      ^\par
+emitter.c:56:11: note: in expansion of macro \lquote PUT_BREAK\rquote\par
+          (PUT_BREAK(emitter),                                                   \\\par
+           ^\par
+emitter.c:2304:18: note: in expansion of macro \lquote WRITE_BREAK\rquote\par
+             if (!WRITE_BREAK(emitter, string)) return 0;\par
+                  ^\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I. -DNDEBUG -I/usr/local/include    -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c implicit.c -o implicit.o\par
+implicit.re: In function \lquote find_implicit_tag\rquote :\par
+implicit.re:12:31: warning: variable \lquote limit\rquote  set but not used [-Wunused-but-set-variable]\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I. -DNDEBUG -I/usr/local/include    -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c loader.c -o loader.o\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I. -DNDEBUG -I/usr/local/include    -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c parser.c -o parser.o\par
+parser.c: In function \lquote yaml_parser_parse_block_sequence_entry\rquote :\par
+parser.c:762:21: warning: variable \lquote dummy_mark\rquote  set but not used [-Wunused-but-set-variable]\par
+         yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */\par
+                     ^\par
+parser.c: In function \lquote yaml_parser_parse_block_mapping_key\rquote :\par
+parser.c:872:21: warning: variable \lquote dummy_mark\rquote  set but not used [-Wunused-but-set-variable]\par
+         yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */\par
+                     ^\par
+parser.c: In function \lquote yaml_parser_parse_flow_sequence_entry\rquote :\par
+parser.c:955:17: warning: variable \lquote dummy_mark\rquote  set but not used [-Wunused-but-set-variable]\par
+     yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */\par
+                 ^\par
+parser.c: In function \lquote yaml_parser_parse_flow_mapping_key\rquote :\par
+parser.c:1107:17: warning: variable \lquote dummy_mark\rquote  set but not used [-Wunused-but-set-variable]\par
+     yaml_mark_t dummy_mark;     /* Used to eliminate a compiler warning. */\par
+                 ^\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I. -DNDEBUG -I/usr/local/include    -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c r-ext.c -o r-ext.o\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I. -DNDEBUG -I/usr/local/include    -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c reader.c -o reader.o\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I. -DNDEBUG -I/usr/local/include    -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c scanner.c -o scanner.o\par
+scanner.c: In function \lquote yaml_parser_decrease_flow_level\rquote :\par
+scanner.c:1196:23: warning: variable \lquote dummy_key\rquote  set but not used [-Wunused-but-set-variable]\par
+     yaml_simple_key_t dummy_key;    /* Used to eliminate a compiler warning. */\par
+                       ^\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I. -DNDEBUG -I/usr/local/include    -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c writer.c -o writer.o\par
+gcc -m64 -std=gnu99 -shared -L/usr/lib64/R/lib -L/usr/local/lib64 -o yaml.so api.o dumper.o emitter.o implicit.o loader.o parser.o r-ext.o reader.o scanner.o writer.o -L/usr/lib64/R/lib -lR\par
+installing to /home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/yaml/libs\par
+** R\par
+** inst\par
+** preparing package for lazy loading\par
+** help\par
+*** installing help indices\par
+  converting help for package \lquote yaml\rquote\par
+    finding HTML links ... done\par
+    as.yaml                                 html  \par
+    yaml.load                               html  \par
+** building package indices\par
+** testing if installed package can be loaded\par
+* DONE (yaml)\par
+* installing *source* package \lquote tibble\rquote  ...\par
+** package \lquote tibble\rquote  successfully unpacked and MD5 sums checked\par
+** libs\par
+g++ -m64 -I/usr/include/R -DNDEBUG  -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c RcppExports.cpp -o RcppExports.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG  -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c matrixToDataFrame.cpp -o matrixToDataFrame.o\par
+g++ -m64 -shared -L/usr/lib64/R/lib -L/usr/local/lib64 -o tibble.so RcppExports.o matrixToDataFrame.o -L/usr/lib64/R/lib -lR\par
+installing to /home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/tibble/libs\par
+** R\par
+** inst\par
+** preparing package for lazy loading\par
+** help\par
+*** installing help indices\par
+  converting help for package \lquote tibble\rquote\par
+    finding HTML links ... done\par
+    add_column                              html  \par
+    add_row                                 html  \par
+    all_equal                               html  \par
+    as_tibble                               html  \par
+    enframe                                 html  \par
+    formatting                              html  \par
+    glimpse                                 html  \par
+    has_name                                html  \par
+    is.tibble                               html  \par
+    knit_print.trunc_mat                    html  \par
+    obj_sum                                 html  \par
+    repair_names                            html  \par
+    rownames                                html  \par
+    tibble-package                          html  \par
+    tibble                                  html  \par
+Rd warning: /mnt/tmp/RtmpbbykjY/R.INSTALL37f754bba759/tibble/man/tibble.Rd:29: missing file link \lquote lazy\rquote\par
+    tribble                                 html  \par
+** building package indices\par
+** installing vignettes\par
+** testing if installed package can be loaded\par
+* DONE (tibble)\par
+* installing *source* package \lquote htmlwidgets\rquote  ...\par
+** package \lquote htmlwidgets\rquote  successfully unpacked and MD5 sums checked\par
+** R\par
+** inst\par
+** preparing package for lazy loading\par
+Warning in tryCatchList(expr, classes, parentenv, handlers) :\par
+  Check shiny:::toJSON and make sure htmlwidgets:::toJSON is in sync\par
+** help\par
+*** installing help indices\par
+  converting help for package \lquote htmlwidgets\rquote\par
+    finding HTML links ... done\par
+    JS                                      html  \par
+    createWidget                            html  \par
+Rd warning: /mnt/tmp/Rtmp8Elud0/R.INSTALL383032d19723/htmlwidgets/man/createWidget.Rd:17: missing file link \lquote toJSON\rquote\par
+    htmlwidgets-package                     html  \par
+    htmlwidgets-shiny                       html  \par
+    onRender                                html  \par
+    onStaticRenderComplete                  html  \par
+Rd warning: /mnt/tmp/Rtmp8Elud0/R.INSTALL383032d19723/htmlwidgets/man/onStaticRenderComplete.Rd:15: missing file link \lquote tags\rquote\par
+    prependContent                          html  \par
+Rd warning: /mnt/tmp/Rtmp8Elud0/R.INSTALL383032d19723/htmlwidgets/man/prependContent.Rd:15: missing file link \lquote tags\rquote\par
+    saveWidget                              html  \par
+    scaffoldWidget                          html  \par
+    setWidgetIdSeed                         html  \par
+    sizingPolicy                            html  \par
+** building package indices\par
+** installing vignettes\par
+** testing if installed package can be loaded\par
+* DONE (htmlwidgets)\par
+* installing *source* package \lquote dplyr\rquote  ...\par
+** package \lquote dplyr\rquote  successfully unpacked and MD5 sums checked\par
+** libs\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c RcppExports.cpp -o RcppExports.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c address.cpp -o address.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c api.cpp -o api.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c arrange.cpp -o arrange.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c between.cpp -o between.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c bind.cpp -o bind.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c combine_variables.cpp -o combine_variables.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c distinct.cpp -o distinct.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c dplyr.cpp -o dplyr.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c filter.cpp -o filter.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c group_indices.cpp -o group_indices.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c init.cpp -o init.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c join.cpp -o join.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c nth.cpp -o nth.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c select.cpp -o select.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c strings_addresses.cpp -o strings_addresses.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c summarise.cpp -o summarise.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c test.cpp -o test.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c window.cpp -o window.o\par
+g++ -m64 -shared -L/usr/lib64/R/lib -L/usr/local/lib64 -o dplyr.so RcppExports.o address.o api.o arrange.o between.o bind.o combine_variables.o distinct.o dplyr.o filter.o group_indices.o init.o join.o nth.o select.o strings_addresses.o summarise.o test.o window.o -L/usr/lib64/R/lib -lR\par
+installing to /home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/libs\par
+** R\par
+** data\par
+*** moving datasets to lazyload DB\par
+** inst\par
+** preparing package for lazy loading\par
+** help\par
+*** installing help indices\par
+  converting help for package \lquote dplyr\rquote\par
+    finding HTML links ... done\par
+    add_rownames                            html  \par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/add_rownames.Rd:15: missing file link \lquote rownames_to_column\rquote\par
+    all_equal                               html  \par
+    arrange                                 html  \par
+    as.table.tbl_cube                       html  \par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/as.table.tbl_cube.Rd:26: missing file link \lquote as_data_frame\rquote\par
+    as.tbl_cube                             html  \par
+    auto_copy                               html  \par
+    backend_db                              html  \par
+    backend_sql                             html  \par
+    backend_src                             html  \par
+    bench_compare                           html  \par
+    between                                 html  \par
+    bind                                    html  \par
+    build_sql                               html  \par
+    case_when                               html  \par
+    coalesce                                html  \par
+    common_by                               html  \par
+    compute                                 html  \par
+    copy_to                                 html  \par
+    copy_to.src_sql                         html  \par
+    cumall                                  html  \par
+    desc                                    html  \par
+    dim_desc                                html  \par
+    distinct                                html  \par
+    do                                      html  \par
+    dplyr                                   html  \par
+    explain                                 html  \par
+    failwith                                html  \par
+    filter                                  html  \par
+    funs                                    html  \par
+    group_by                                html  \par
+    group_by_prepare                        html  \par
+    group_indices                           html  \par
+    group_size                              html  \par
+    grouped_df                              html  \par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/grouped_df.Rd:35: missing file link \lquote as_data_frame\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/grouped_df.Rd:39: missing file link \lquote as_data_frame\rquote\par
+    groups                                  html  \par
+    id                                      html  \par
+    if_else                                 html  \par
+    join                                    html  \par
+    join.tbl_df                             html  \par
+    join.tbl_sql                            html  \par
+    lahman                                  html  \par
+    lazy_ops                                html  \par
+    lead-lag                                html  \par
+    location                                html  \par
+    make_tbl                                html  \par
+    mutate                                  html  \par
+    n                                       html  \par
+    n_distinct                              html  \par
+    na_if                                   html  \par
+    named_commas                            html  \par
+    nasa                                    html  \par
+    near                                    html  \par
+    nth                                     html  \par
+    nycflights13                            html  \par
+    order_by                                html  \par
+    partial_eval                            html  \par
+    progress_estimated                      html  \par
+    query                                   html  \par
+    ranking                                 html  \par
+    recode                                  html  \par
+    reexports                               html  \par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:24: missing file link \lquote %>%\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:26: missing file link \lquote data_frame\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:26: missing file link \lquote data_frame_\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:26: missing file link \lquote as_data_frame\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:26: missing file link \lquote lst\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:26: missing file link \lquote lst_\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:26: missing file link \lquote type_sum\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:26: missing file link \lquote frame_data\rquote\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/reexports.Rd:26: missing file link \lquote trunc_mat\rquote\par
+    rowwise                                 html  \par
+    same_src                                html  \par
+    sample                                  html  \par
+    select                                  html  \par
+    select_helpers                          html  \par
+    select_if                               html  \par
+    select_vars                             html  \par
+    setops                                  html  \par
+    slice                                   html  \par
+    sql                                     html  \par
+    sql_build                               html  \par
+    sql_quote                               html  \par
+    sql_variant                             html  \par
+    src-test                                html  \par
+    src                                     html  \par
+    src_local                               html  \par
+    src_memdb                               html  \par
+    src_mysql                               html  \par
+    src_postgres                            html  \par
+    src_sql                                 html  \par
+    src_sqlite                              html  \par
+    src_tbls                                html  \par
+    summarise                               html  \par
+    summarise_all                           html  \par
+    summarise_each                          html  \par
+    tally                                   html  \par
+    tbl                                     html  \par
+    tbl_cube                                html  \par
+    tbl_df                                  html  \par
+\par
+    finding level-2 HTML links ... done\par
+\par
+Rd warning: /mnt/tmp/RtmpdWrhBw/R.INSTALL383f1b75353b/dplyr/man/tbl_df.Rd:13: missing file link \lquote as_data_frame\rquote\par
+    tbl_sql                                 html  \par
+    tbl_vars                                html  \par
+    testing                                 html  \par
+    top_n                                   html  \par
+    translate_sql                           html  \par
+    vars                                    html  \par
+    with_order                              html  \par
+** building package indices\par
+** installing vignettes\par
+** testing if installed package can be loaded\par
+* DONE (dplyr)\par
+* installing *source* package \lquote purrr\rquote  ...\par
+** package \lquote purrr\rquote  successfully unpacked and MD5 sums checked\par
+** libs\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c extract.c -o extract.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c fast-copy.cpp -o fast-copy.o\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c flatten.c -o flatten.o\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c map.c -o map.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c rows-data.cpp -o rows-data.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c rows-formatter.cpp -o rows-formatter.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c rows.cpp -o rows.o\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c transpose.c -o transpose.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"  -DBOOST_NO_INT64_T -DBOOST_NO_INTEGRAL_INT64_T -DBOOST_NO_LONG_LONG -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c utils.cpp -o utils.o\par
+gcc -m64 -std=gnu99 -I/usr/include/R -DNDEBUG -I../inst/include -DCOMPILING_DPLYR -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/dplyr/include" -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/BH/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c vector.c -o vector.o\par
+g++ -m64 -shared -L/usr/lib64/R/lib -L/usr/local/lib64 -o purrr.so extract.o fast-copy.o flatten.o map.o rows-data.o rows-formatter.o rows.o transpose.o utils.o vector.o -L/usr/lib64/R/lib -lR\par
+installing to /home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/purrr/libs\par
+** R\par
+** preparing package for lazy loading\par
+** help\par
+*** installing help indices\par
+  converting help for package \lquote purrr\rquote\par
+    finding HTML links ... done\par
+    accumulate                              html  \par
+    along                                   html  \par
+    array-coercion                          html  \par
+    as_function                             html  \par
+    as_vector                               html  \par
+    at_depth                                html  \par
+    bare-type-predicates                    html  \par
+    by_row                                  html  \par
+    by_slice                                html  \par
+Rd warning: /mnt/tmp/RtmpEiBVAv/R.INSTALL3c4c44d39d09/purrr/man/by_slice.Rd:47: missing file link \lquote mutate_each\rquote\par
+    compose                                 html  \par
+    conditional-map                         html  \par
+    contains                                html  \par
+    cross_n                                 html  \par
+    detect                                  html  \par
+    dmap                                    html  \par
+    every                                   html  \par
+    flatmap                                 html  \par
+    flatten                                 html  \par
+    get-attr                                html  \par
+    head_while                              html  \par
+    invoke                                  html  \par
+    is_empty                                html  \par
+    is_formula                              html  \par
+    keep                                    html  \par
+    lift                                    html  \par
+    lmap                                    html  \par
+    map                                     html  \par
+    map2                                    html  \par
+    negate                                  html  \par
+    null-default                            html  \par
+    partial                                 html  \par
+    pipe                                    html  \par
+    prepend                                 html  \par
+    rbernoulli                              html  \par
+    rdunif                                  html  \par
+    reduce                                  html  \par
+    rerun                                   html  \par
+    safely                                  html  \par
+    scalar-type-predicates                  html  \par
+    set_names                               html  \par
+    slice_rows                              html  \par
+    splice                                  html  \par
+    split_by                                html  \par
+    transpose                               html  \par
+    type-predicates                         html  \par
+    update_list                             html  \par
+    when                                    html  \par
+** building package indices\par
+** testing if installed package can be loaded\par
+* DONE (purrr)\par
+* installing *source* package \lquote tidyr\rquote  ...\par
+** package \lquote tidyr\rquote  successfully unpacked and MD5 sums checked\par
+** libs\par
+g++ -m64 -I/usr/include/R -DNDEBUG  -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c RcppExports.cpp -o RcppExports.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG  -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c fill.cpp -o fill.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG  -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c melt.cpp -o melt.o\par
+g++ -m64 -I/usr/include/R -DNDEBUG  -I/usr/local/include -I"/home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/Rcpp/include"   -fpic  -O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector --param=ssp-buffer-size=4 -m64 -mtune=generic  -c simplifyPieces.cpp -o simplifyPieces.o\par
+g++ -m64 -shared -L/usr/lib64/R/lib -L/usr/local/lib64 -o tidyr.so RcppExports.o fill.o melt.o simplifyPieces.o -L/usr/lib64/R/lib -lR\par
+installing to /home/analyst/R/x86_64-redhat-linux-gnu-library/3.2/tidyr/libs\par
+** R\par
+** data\par
+*** moving datasets to lazyload DB\par
+** demo\par
+** inst\par
+** preparing package for lazy loading\par
+** help\par
+*** installing help indices\par
+  converting help for package \lquote tidyr\rquote\par
+    finding HTML links ... done\par
+    complete                                html  \par
+Rd warning: /mnt/tmp/RtmpMNQcci/R.INSTALL3d0945b0f5bc/tidyr/man/complete.Rd:36: missing file link \lquote left_join\rquote\par
+    complete_                               html  \par
+    drop_na                                 html  \par
+    drop_na_                                html  \par
+    expand                                  html  \par
+    expand_                                 html  \par
+    extract                                 html  \par
+    extract_                                html  \par
+    extract_numeric                         html  \par
+    fill                                    html  \par
+    fill_                                   html  \par
+    full_seq                                html  \par
+    gather                                  html  \par
+    gather_                                 html  \par
+    nest                                    html  \par
+    nest_                                   html  \par
+    pipe                                    html  \par
+Rd warning: /mnt/tmp/RtmpMNQcci/R.INSTALL3d0945b0f5bc/tidyr/man/pipe.Rd:10: missing file link \lquote %>%\rquote\par
+    replace_na                              html  \par
+    separate                                html  \par
+    separate_                               html  \par
+    separate_rows                           html  \par
+    separate_rows_                          html  \par
+    smiths                                  html  \par
+    spread                                  html  \par
+    spread_                                 html  \par
+    table1                                  html  \par
+    unite                                   html  \par
+    unite_                                  html  \par
+    unnest                                  html  \par
+    unnest_                                 html  \par
+    who                                     html  \par
+** building package indices\par
+** installing vignettes\par
+** testing if installed package can be loaded\par
+* DONE (tidyr)\par
+* installing *source* package \lquote d3r\rquote  ...\par
+** package \lquote d3r\rquote  successfully unpacked and MD5 sums checked\par
+** R\par
+** inst\par
+** preparing package for lazy loading\par
+** help\par
+*** installing help indices\par
+  converting help for package \lquote d3r\rquote\par
+    finding HTML links ... done\par
+    change_to_id                            html  \par
+    d3_dep_v3                               html  \par
+    d3_dep_v4                               html  \par
+    d3_igraph                               html  \par
+    d3_json                                 html  \par
+    d3_nest                                 html  \par
+    d3_party                                html  \par
+    promote_na                              html  \par
+    promote_na_one                          html  \par
+** building package indices\par
+** testing if installed package can be loaded\par
+* DONE (d3r)\par
+* installing *source* package \lquote sunburstR\rquote  ...\par
+** package \lquote sunburstR\rquote  successfully unpacked and MD5 sums checked\par
+** R\par
+** inst\par
+** preparing package for lazy loading\par
+** help\par
+*** installing help indices\par
+  converting help for package \lquote sunburstR\rquote\par
+    finding HTML links ... done\par
+    add_shiny                               html  \par
+    sunburst-shiny                          html  \par
+    sunburst                                html  \par
+** building package indices\par
+** testing if installed package can be loaded\par
+* DONE (sunburstR)\par
+\par
+The downloaded source packages are in\par
+\tab\lquote /mnt/tmp/RtmpDBjTBo/downloaded_packages\rquote\par
+> library(twitteR)\par
+> library(ROAuth)\par
+> library(SnowballC)\par
+> library(ggplot2)\par
+> library(RColorBrewer)\par
+> library(httr)\par
+> library(RCurl)\par
+> library(XML)\par
+> library(devtools)\par
+> library(sqldf)\par
+> #download the next\par
+> library(BiocGenerics)\par
+> library(graph)\par
+> library(Rgraphviz)\par
+Loading required package: grid\par
+\par
+Attaching package: \lquote Rgraphviz\rquote\par
+\par
+The following object is masked from \lquote package:twitteR\rquote :\par
+\par
+    name\par
+\par
+> library(Rstem)\par
+> library(slam)\par
+> library(tm) #CRAN\par
+> library(modeltools) #CRAN\par
+> library(sentiment)\par
+> library(wordcloud)\par
+> #Download gsl dependency first\par
+> #sudo yum install gsl-devel\par
+> library(topicmodels)\par
+> library(shiny)\par
+> library(sunburstR)\par
+> ## Twitter authentication\par
+> consumer_key <- "iMmcGRLke8MI6re7RF7WjyDuu"\par
+> consumer_secret <-"9pKnpqjGd6e1mYM1Jj1lPRqh13aLx48AEJclM7q26XdLcfIvns"\par
+> access_token <- "788589864845512704-U4YhnTbjV6Api9bW7XrBPhnUgWzB9q3"\par
+> access_secret <- "ZYBvg6LfDqJzlI4jfvhkvYq6FWPyHvDFgWVWvvBwlS9M5"\par
+> consumer_key <- "iMmcGRLke8MI6re7RF7WjyDuu"\par
+> consumer_secret <-"9pKnpqjGd6e1mYM1Jj1lPRqh13aLx48AEJclM7q26XdLcfIvns"\par
+> access_token <- "788589864845512704-U4YhnTbjV6Api9bW7XrBPhnUgWzB9q3"\par
+> access_secret <- "ZYBvg6LfDqJzlI4jfvhkvYq6FWPyHvDFgWVWvvBwlS9M5"\par
+> setup_twitter_oauth(consumer_key, consumer_secret, access_token,access_secret)\par
+[1] "Using direct authentication"\par
+Use a local file ('.httr-oauth'), to cache OAuth access credentials between R sessions?\par
+\par
+1: Yes\par
+2: No\par
+\par
+Selection: 1\par
+Adding .httr-oauth to .gitignore\par
+> ## 1795 is the maximum to retrieve\par
+> tweets <- searchTwitter('Manufacturing', n=300, lang = "en")\par
+> tweets.df <- twListToDF(tweets)\par
+> (n.tweet <- length(tweets))\par
+[1] 300\par
+> writeLines(strwrap(tweets.df$text[190], 60))\par
+Can you recommend anyone for this #job in #Framingham,\par
+Massachusetts? {\field{\*\fldinst{HYPERLINK "https://t.co/8b4G49wZ9e"}}{\fldrslt{\ul\cf1 https://t.co/8b4G49wZ9e}}}\f0\fs22  #Manufacturing\par
+#Hiring\par
+> library(tm)\par
+> myCorpus <- Corpus(VectorSource(tweets.df$text))\par
+> myCorpus <- tm_map(myCorpus, PlainTextDocument)\par
+> test.dataframe_before<-data.frame(text=unlist(sapply(myCorpus, `[`, "content")), stringsAsFactors=F)\par
+> removeURL <- function(x) gsub("http[^[:space:]]*", "", x)\par
+> myCorpus <- tm_map(myCorpus, content_transformer(removeURL))\par
+> ####\par
+> removeNumPunct <- function(x) gsub("[^[:alpha:][:space:]]*", "", x)\par
+> myCorpus <- tm_map(myCorpus, content_transformer(removeNumPunct))\par
+> test.dataframe<-data.frame(text=unlist(sapply(myCorpus, `[`, "content")), stringsAsFactors=F)\par
+> ####\par
+> myStopwords <- c(setdiff(stopwords('english'), c("a", "n")),"use", "see", "a", "used", "in", "by", "for","rt")\par
+> myCorpus <- tm_map(myCorpus, removeWords, myStopwords)\par
+> myCorpus <- tm_map(myCorpus, stripWhitespace)\par
+> #################################################################################################################\par
+> myCorpus <- tm_map(myCorpus, content_transformer(tolower))\par
+> myCorpusCopy <- myCorpus\par
+> test.dataframe<-data.frame(text=unlist(sapply(myCorpus, `[`, "content")), stringsAsFactors=F)\par
+> #Debugged :P\par
+> #SnowBall\par
+> myCorpus <- tm_map(myCorpus, stemDocument) # stem words\par
+> writeLines(strwrap(myCorpus[[190]]$content, 60))\par
+can recommend anyon job framingham massachusett manufactur\par
+hire\par
+> stemCompletion2 <- function(x, dictionary) \{\par
++ x <- unlist(strsplit(as.character(x), " "))\par
++ x <- x[x != ""]\par
++ x <- stemCompletion(x, dictionary=dictionary)\par
++ x <- paste(x, sep="", collapse=" ")\par
++ PlainTextDocument(stripWhitespace(x))\par
++ \}\par
+> myCorpus <- lapply(myCorpus, stemCompletion2, dictionary=myCorpusCopy)\par
+> myCorpus <- Corpus(VectorSource(myCorpus))\par
+> writeLines(strwrap(myCorpus[[190]]$content, 60))\par
+can recommend anyone job framingham massachusetts\par
+manufacturers\par
+> wordFreq <- function(corpus, word) \{\par
++ results <- lapply(corpus,\par
++ function(x) \{ grep(as.character(x), pattern=paste0("\\\\<",word)) \}\par
++ )\par
++ sum(unlist(results))\par
++ \}\par
+> n.miner <- wordFreq(myCorpusCopy, "service")\par
+> n.mining <- wordFreq(myCorpusCopy, "emergency")\par
+> cat(n.miner, n.mining)\par
+3 0\par
+> #replaceWord <- function(corpus, oldword, newword) \{\par
+> #  tm_map(corpus, content_transformer(gsub),\par
+> #         pattern=oldword, replacement=newword)\par
+> #\}\par
+> #myCorpus <- replaceWord(myCorpus, "vehiclee", "vehicle")\par
+> #myCorpus <- replaceWord(myCorpus, "universidad", "university")\par
+> #myCorpus <- replaceWord(myCorpus, "scienc", "science")\par
+> tdm <- TermDocumentMatrix(myCorpus, control = list(wordLengths = c(1, Inf)))\par
+> tdm\par
+<<TermDocumentMatrix (terms: 789, documents: 300)>>\par
+Non-/sparse entries: 2670/234030\par
+Sparsity           : 99%\par
+Maximal term length: 18\par
+Weighting          : term frequency (tf)\par
+> idx <- which(dimnames(tdm)$Terms %in% c("cyrus", "tata", "price"))\par
+> as.matrix(tdm[idx, 21:30])\par
+       Docs\par
+Terms   21 22 23 24 25 26 27 28 29 30\par
+  price  0  0  0  0  0  0  0  0  0  0\par
+> (freq.terms <- findFreqTerms(tdm, lowfreq = 100))\par
+[1] "big"           "brokenanimais" "errors"        "kitties"       "little"       \par
+[6] "manufacturers" "rt"           \par
+> term.freq <- rowSums(as.matrix(tdm))\par
+> term.freq <- subset(term.freq, term.freq >= 5)\par
+> word_freq <- data.frame(term = names(term.freq), freq = term.freq)\par
+> #Debugged :P\par
+> #ggplot2\par
+> ggplot(word_freq, aes(x=term, y=freq)) + geom_bar(stat="identity") +\par
++ xlab("Terms") + ylab("Count") + coord_flip() +\par
++ theme(axis.text=element_text(size=7))\par
+> m <- as.matrix(tdm)\par
+> # calculate the frequency of words and sort it by frequency\par
+> word.freq <- sort(rowSums(m), decreasing = T)\par
+> # colors\par
+> #RColorBrewer\par
+> pal <- brewer.pal(9, "BuGn")[-(1:4)]\par
+> #wordcloud\par
+> wordcloud(words = names(word.freq), freq = word.freq, min.freq = 10, random.order = F, colors = pal)\par
+Warning message:\par
+In wordcloud(words = names(word.freq), freq = word.freq, min.freq = 10,  :\par
+  manufacturers could not be fit on page. It will not be plotted.\par
+> findAssocs(tdm, "price", 0.2)\par
+$price\par
+additional       boar    circuit        pcb        pcs    printed    quarter \par
+      1.00       1.00       1.00       1.00       1.00       1.00       1.00 \par
+         a    process \par
+      0.44       0.28 \par
+\par
+> findAssocs(tdm, "service", 0.2)\par
+$service\par
+bhaiyyajispeaks       diffusing          mobile          normal           phone \par
+           0.82            0.82            0.82            0.82            0.82 \par
+        samsung          squads            bomb            fife            tech \par
+           0.82            0.82            0.66            0.58            0.58 \par
+         custom         support       companies \par
+           0.57            0.46            0.30 \par
+\par
+> plot(tdm, term = freq.terms, corThreshold = 0.4, weighting = T)\par
+> dtm <- as.DocumentTermMatrix(tdm)\par
+> #topicmodels\par
+> lda <- LDA(dtm, k = 10) # find 10 topics\par
+> term <- terms(lda, 10) # first 10 terms of every topic\par
+> (term <- apply(term, MARGIN = 2, paste, collapse = ", "))\par
+                                                                                               Topic 1 \par
+                      "manufacturers, rt, states, unit, job, will, back, automation, assembler, bring" \par
+                                                                                               Topic 2 \par
+         "manufacturers, process, rt, csironews, amp, australian, australianm, carbon, director, just" \par
+                                                                                               Topic 3 \par
+                                        "manufacturers, job, rt, work, come, first, high, not, the, u" \par
+                                                                                               Topic 4 \par
+                       "manufacturers, china, christi, corpus, risk, rt, factor, also, business, coal" \par
+                                                                                               Topic 5 \par
+        "kitties, errors, manufacturers, big, brokenanimais, little, rt, fewer, costreduction, switch" \par
+                                                                                               Topic 6 \par
+              "manufacturers, rt, engineer, uk, can, aerospace, kent, semiconductor, benefit, defence" \par
+                                                                                               Topic 7 \par
+                  "manufacturers, rt, job, recommend, water, can, anyone, chemical, arent, byproducts" \par
+                                                                                               Topic 8 \par
+"manufacturers, rt, amp, class, dagnydelinquent, destroyed, middle, pharmaceutical, companies, pharma" \par
+                                                                                               Topic 9 \par
+                       "manufacturers, unit, apple, new, set, ar, compliant, shipping, standard, york" \par
+                                                                                              Topic 10 \par
+                          "job, manufacturers, rt, iot, us, healthcare, will, abdsc, bigdata, creator" \par
+> term.df <- as.data.frame(term)\par
+> newtopic_df <- as.data.frame(c(1:10))\par
+> names(newtopic_df)[1] <- "topic"\par
+> newtopic_df <- cbind(term.df,newtopic_df)\par
+> topics <- topics(lda) # 1st topic identified for every document (tweet)\par
+> topics <- data.frame(date=as.Date(tweets.df$created), topic=topics)\par
+> ggplot(topics, aes(date, fill = term[topic])) + geom_density(position = "stack")\par
+> #httr\par
+> #RCurl\par
+> #XML\par
+> #devtools\par
+> #install_github("okugami79/sentiment140")\par
+> #sentiment\par
+> #emotions_classified <- classify_emotion(tweets.df, algorithm = "bayes", prior = 1.0, verbose = FALSE)\par
+> #emotions_df <- as.data.frame(emotions_classified)\par
+> polarity_classified <- classify_polarity(tweets.df$text, algorithm= "bayes", pstrong = 0.5, pweak= 1.0 , prior = 1.0, verbose = FALSE)\par
+> polarity_classified_df <- as.data.frame(polarity_classified)\par
+> results_polarity <- as.data.frame(polarity_classified_df$BEST_FIT)\par
+> tweet_text <- as.data.frame(tweets.df$text)\par
+> #VISUAL SUNBURST\par
+> combined_result <- cbind(tweet_text,results_polarity)\par
+> Visual_DF <- as.data.frame(combined_result)\par
+> head(Visual_DF)\par
+                                                                                                                                tweets.df$text\par
+1 RT @KirkDBorne: Will #IoT be a Job Killer or Job Creator? {\field{\*\fldinst{HYPERLINK "https://t.co/bBJt4awCEx"}}{\fldrslt{\ul\cf1 https://t.co/bBJt4awCEx}}}\f0\fs22  #abdsc #BigData #EdgeAnalytics #healthcare #manufacturing\'85\par
+2                                  RT @BrokenAnimaIs: big kitties have the same manufacturing errors as little kitties {\field{\*\fldinst{HYPERLINK "https://t.co/r1znqUyj2T"}}{\fldrslt{\ul\cf1 https://t.co/r1znqUyj2T}}}\f0\fs22\par
+3                                        Anonymous: Manufacturing Engineer (Not Specified, Scotland, United Kingdom)\\n {\field{\*\fldinst{HYPERLINK "https://t.co/AZeWdNe2Km"}}{\fldrslt{\ul\cf1 https://t.co/AZeWdNe2Km}}}\f0\fs22\par
+4                         @TimesNow JNU is educational institute or what? what they r manufacturing  BHAGAT SINGH OR BURHANWANI? bulldoze JNU.\par
+5                                  RT @BrokenAnimaIs: big kitties have the same manufacturing errors as little kitties {\field{\*\fldinst{HYPERLINK "https://t.co/r1znqUyj2T"}}{\fldrslt{\ul\cf1 https://t.co/r1znqUyj2T}}}\f0\fs22\par
+6                                  RT @BrokenAnimaIs: big kitties have the same manufacturing errors as little kitties {\field{\*\fldinst{HYPERLINK "https://t.co/r1znqUyj2T"}}{\fldrslt{\ul\cf1 https://t.co/r1znqUyj2T}}}\f0\fs22\par
+  polarity_classified_df$BEST_FIT\par
+1                        negative\par
+2                        negative\par
+3                        positive\par
+4                        positive\par
+5                        negative\par
+6                        negative\par
+> names(Visual_DF)[1] <- "Tweet"\par
+> names(Visual_DF)[2] <- "Sentiment"\par
+> Visual_DF$title <- "Manufacturing"\par
+> Visual_DF$count <- rep(1, nrow(Visual_DF))\par
+> combinedtopic_terms <- sqldf("select * from newtopic_df INNER JOIN topics ON topics.topic = newtopic_df.topic;")\par
+> combinedtopic_terms[4] <- NULL\par
+> newVisual_DF <- cbind(Visual_DF, combinedtopic_terms$term)\par
+> names(newVisual_DF)[5] <- "Topics"\par
+> newVisual_DF$path <- paste(newVisual_DF$title, newVisual_DF$Topic, newVisual_DF$Sentiment, sep="-")\par
+> yellow <- c("#FFFF00")\par
+> blue <- c("#5687d1")\par
+> brown <- c("#7b615c")\par
+> orange <- c("#de783b")\par
+> l_green <- c("#6ab975")\par
+> purple <- c("#a173d1")\par
+> l_yellow <- c("#FFFFCC")\par
+> aqua <- c("#00CC99")\par
+> d_aqua <- c("#009999")\par
+> occur <- c("#CC6600")\par
+> red <- c("#FF3300")\par
+> pink <- c("#CC33FF")\par
+> green <- c("#339900")\par
+> grey <-c("#999999")\par
+> #x= list(c9)\par
+> x=list(yellow, blue , orange , red , grey , green , aqua , d_aqua , occur , purple , l_green , brown , l_yellow , pink)\par
+> typeof(x)\par
+[1] "list"\par
+> head(x)\par
+[[1]]\par
+[1] "#FFFF00"\par
+\par
+[[2]]\par
+[1] "#5687d1"\par
+\par
+[[3]]\par
+[1] "#de783b"\par
+\par
+[[4]]\par
+[1] "#FF3300"\par
+\par
+[[5]]\par
+[1] "#999999"\par
+\par
+[[6]]\par
+[1] "#339900"\par
+\par
+> sunburst(data.frame(xtabs(count~path,newVisual_DF)), colors= x, count = TRUE)\par
+> # Installing packages\par
+> # CRAN\par
+> library(twitteR)\par
+> library(ROAuth)\par
+> library(SnowballC)\par
+> library(ggplot2)\par
+> library(RColorBrewer)\par
+> library(httr)\par
+> library(RCurl)\par
+> library(XML)\par
+> library(devtools)\par
+> library(sqldf)\par
+> #download the next\par
+> library(BiocGenerics)\par
+> library(graph)\par
+> library(Rgraphviz)\par
+> library(Rstem)\par
+> library(slam)\par
+> library(tm) #CRAN\par
+> library(modeltools) #CRAN\par
+> library(sentiment)\par
+> library(wordcloud)\par
+> #Download gsl dependency first\par
+> #sudo yum install gsl-devel\par
+> library(topicmodels)\par
+> library(shiny)\par
+> library(sunburstR)\par
+> ## Twitter authentication\par
+> consumer_key <- "iMmcGRLke8MI6re7RF7WjyDuu"\par
+> consumer_secret <-"9pKnpqjGd6e1mYM1Jj1lPRqh13aLx48AEJclM7q26XdLcfIvns"\par
+> access_token <- "788589864845512704-U4YhnTbjV6Api9bW7XrBPhnUgWzB9q3"\par
+> access_secret <- "ZYBvg6LfDqJzlI4jfvhkvYq6FWPyHvDFgWVWvvBwlS9M5"\par
+> setup_twitter_oauth(consumer_key, consumer_secret, access_token,access_secret)\par
+[1] "Using direct authentication"\par
+> ## 1795 is the maximum to retrieve\par
+> tweets <- searchTwitter('Health+care', n=3000, lang = "en")\par
+> tweets.df <- twListToDF(tweets)\par
+> (n.tweet <- length(tweets))\par
+[1] 3000\par
+> writeLines(strwrap(tweets.df$text[190], 60))\par
+RT @rcooley123: Get Business Out of Health Care: Need\par
+Before Greed. People Over Profits. Single-payer, Universal\par
+Coverage - {\field{\*\fldinst{HYPERLINK "https://t.co/d\'85"}}{\fldrslt{\ul\cf1 https://t.co/d\'85}}}\f0\fs22\par
+> library(tm)\par
+> myCorpus <- Corpus(VectorSource(tweets.df$text))\par
+> myCorpus <- tm_map(myCorpus, PlainTextDocument)\par
+> test.dataframe_before<-data.frame(text=unlist(sapply(myCorpus, `[`, "content")), stringsAsFactors=F)\par
+> removeURL <- function(x) gsub("http[^[:space:]]*", "", x)\par
+> myCorpus <- tm_map(myCorpus, content_transformer(removeURL))\par
+> ####\par
+> removeNumPunct <- function(x) gsub("[^[:alpha:][:space:]]*", "", x)\par
+> myCorpus <- tm_map(myCorpus, content_transformer(removeNumPunct))\par
+> test.dataframe<-data.frame(text=unlist(sapply(myCorpus, `[`, "content")), stringsAsFactors=F)\par
+> ####\par
+> myStopwords <- c(setdiff(stopwords('english'), c("a", "n")),"use", "see", "a", "used", "in", "by", "for")\par
+> myCorpus <- tm_map(myCorpus, removeWords, myStopwords)\par
+> myCorpus <- tm_map(myCorpus, stripWhitespace)\par
+> #################################################################################################################\par
+> myCorpus <- tm_map(myCorpus, content_transformer(tolower))\par
+> myCorpusCopy <- myCorpus\par
+> test.dataframe<-data.frame(text=unlist(sapply(myCorpus, `[`, "content")), stringsAsFactors=F)\par
+> #Debugged :P\par
+> #SnowBall\par
+> myCorpus <- tm_map(myCorpus, stemDocument) # stem words\par
+> writeLines(strwrap(myCorpus[[190]]$content, 60))\par
+rt rcooley get busi out health care need befor greed peopl\par
+over profit singlepay univers coverag\par
+> stemCompletion2 <- function(x, dictionary) \{\par
++ x <- unlist(strsplit(as.character(x), " "))\par
++ x <- x[x != ""]\par
++ x <- paste(x, sep="", collapse=" ")\par
++ PlainTextDocument(stripWhitespace(x))\par
++ x <- stemCompletion(x, dictionary=dictionary)\par
++ \}\par
+> myCorpus <- lapply(myCorpus, stemCompletion2, dictionary=myCorpusCopy)\par
+> myCorpus <- Corpus(VectorSource(myCorpus))\par
+> writeLines(strwrap(myCorpus[[190]]$content, 60))\par
+NA\par
+> wordFreq <- function(corpus, word) \{\par
++ results <- lapply(corpus,\par
++ function(x) \{ grep(as.character(x), pattern=paste0("\\\\<",word)) \}\par
++ )\par
++ sum(unlist(results))\par
++ \}\par
+> n.miner <- wordFreq(myCorpusCopy, "service")\par
+> n.mining <- wordFreq(myCorpusCopy, "emergency")\par
+> cat(n.miner, n.mining)\par
+62 4\par
+> #replaceWord <- function(corpus, oldword, newword) \{\par
+> #  tm_map(corpus, content_transformer(gsub),\par
+> #         pattern=oldword, replacement=newword)\par
+> #\}\par
+> #myCorpus <- replaceWord(myCorpus, "vehiclee", "vehicle")\par
+> #myCorpus <- replaceWord(myCorpus, "universidad", "university")\par
+> #myCorpus <- replaceWord(myCorpus, "scienc", "science")\par
+> tdm <- TermDocumentMatrix(myCorpus, control = list(wordLengths = c(1, Inf)))\par
+> tdm\par
+<<TermDocumentMatrix (terms: 0, documents: 3000)>>\par
+Non-/sparse entries: 0/0\par
+Sparsity           : 100%\par
+Maximal term length: 0\par
+Weighting          : term frequency (tf)\par
+> idx <- which(dimnames(tdm)$Terms %in% c("cyrus", "tata", "price"))\par
+> as.matrix(tdm[idx, 21:30])\par
+      Docs\par
+Terms  21 22 23 24 25 26 27 28 29 30\par
+> (freq.terms <- findFreqTerms(tdm, lowfreq = 100))\par
+NULL\par
+> term.freq <- rowSums(as.matrix(tdm))\par
+> term.freq <- subset(term.freq, term.freq >= 5)\par
+> word_freq <- data.frame(term = names(term.freq), freq = term.freq)\par
+> #Debugged :P\par
+> #ggplot2\par
+> ggplot(word_freq, aes(x=term, y=freq)) + geom_bar(stat="identity") +\par
++ xlab("Terms") + ylab("Count") + coord_flip() +\par
++ theme(axis.text=element_text(size=7))\par
+Error: Aesthetics must be either length 1 or the same as the data (10): x, y\par
+> m <- as.matrix(tdm)\par
+> #ggplot2\par
+> ggplot(word_freq, aes(x=term, y=freq)) + geom_bar(stat="identity") +\par
++ xlab("Terms") + ylab("Count") + coord_flip() +\par
++ theme(axis.text=element_text(size=7))\par
+Error: Aesthetics must be either length 1 or the same as the data (10): x, y\par
+> m <- as.matrix(tdm)\par
+> # calculate the frequency of words and sort it by frequency\par
+> word.freq <- sort(rowSums(m), decreasing = T)\par
+> # colors\par
+> #RColorBrewer\par
+> pal <- brewer.pal(9, "BuGn")[-(1:4)]\par
+> #wordcloud\par
+> wordcloud(words = names(word.freq), freq = word.freq, min.freq = 10, random.order = F, colors = pal)\par
+Error in strwidth(words[i], cex = size[i], ...) : invalid 'cex' value\par
+In addition: Warning messages:\par
+1: In max(freq) : no non-missing arguments to max; returning -Inf\par
+2: In max(freq) : no non-missing arguments to max; returning -Inf\par
+> findAssocs(tdm, "price", 0.2)\par
+$price\par
+numeric(0)\par
+\par
+> findAssocs(tdm, "service", 0.2)\par
+$service\par
+numeric(0)\par
+\par
+> plot(tdm, term = freq.terms, corThreshold = 0.4, weighting = T)\par
+Error in `[.simple_triplet_matrix`(m, , terms) : \par
+  Invalid subscript type: NULL.\par
+In addition: Warning message:\par
+In is.na(j) : is.na() applied to non-(list or vector) of type 'NULL'\par
+> dtm <- as.DocumentTermMatrix(tdm)\par
+> #topicmodels\par
+> lda <- LDA(dtm, k = 10) # find 10 topics\par
+Error in LDA(dtm, k = 10) : \par
+  Each row of the input matrix needs to contain at least one non-zero entry\par
+> term <- terms(lda, 10) # first 10 terms of every topic\par
+> (term <- apply(term, MARGIN = 2, paste, collapse = ", "))\par
+                                                                                               Topic 1 \par
+                      "manufacturers, rt, states, unit, job, will, back, automation, assembler, bring" \par
+                                                                                               Topic 2 \par
+         "manufacturers, process, rt, csironews, amp, australian, australianm, carbon, director, just" \par
+                                                                                               Topic 3 \par
+                                        "manufacturers, job, rt, work, come, first, high, not, the, u" \par
+                                                                                               Topic 4 \par
+                       "manufacturers, china, christi, corpus, risk, rt, factor, also, business, coal" \par
+                                                                                               Topic 5 \par
+        "kitties, errors, manufacturers, big, brokenanimais, little, rt, fewer, costreduction, switch" \par
+                                                                                               Topic 6 \par
+              "manufacturers, rt, engineer, uk, can, aerospace, kent, semiconductor, benefit, defence" \par
+                                                                                               Topic 7 \par
+                  "manufacturers, rt, job, recommend, water, can, anyone, chemical, arent, byproducts" \par
+                                                                                               Topic 8 \par
+"manufacturers, rt, amp, class, dagnydelinquent, destroyed, middle, pharmaceutical, companies, pharma" \par
+                                                                                               Topic 9 \par
+                       "manufacturers, unit, apple, new, set, ar, compliant, shipping, standard, york" \par
+                                                                                              Topic 10 \par
+                          "job, manufacturers, rt, iot, us, healthcare, will, abdsc, bigdata, creator" \par
+> term.df <- as.data.frame(term)\par
+> newtopic_df <- as.data.frame(c(1:10))\par
+> names(newtopic_df)[1] <- "topic"\par
+> newtopic_df <- cbind(term.df,newtopic_df)\par
+> topics <- topics(lda) # 1st topic identified for every document (tweet)\par
+> topics <- data.frame(date=as.Date(tweets.df$created), topic=topics)\par
+Warning message:\par
+In data.frame(date = as.Date(tweets.df$created), topic = topics) :\par
+  row names were found from a short variable and have been discarded\par
+> ggplot(topics, aes(date, fill = term[topic])) + geom_density(position = "stack")\par
+> #httr\par
+> #RCurl\par
+> #XML\par
+> #devtools\par
+> #install_github("okugami79/sentiment140")\par
+> #sentiment\par
+> #emotions_classified <- classify_emotion(tweets.df, algorithm = "bayes", prior = 1.0, verbose = FALSE)\par
+> #emotions_df <- as.data.frame(emotions_classified)\par
+> polarity_classified <- classify_polarity(tweets.df$text, algorithm= "bayes", pstrong = 0.5, pweak= 1.0 , prior = 1.0, verbose = FALSE)\par
+> polarity_classified_df <- as.data.frame(polarity_classified)\par
+> results_polarity <- as.data.frame(polarity_classified_df$BEST_FIT)\par
+> tweet_text <- as.data.frame(tweets.df$text)\par
+> #VISUAL SUNBURST\par
+> combined_result <- cbind(tweet_text,results_polarity)\par
+> Visual_DF <- as.data.frame(combined_result)\par
+> head(Visual_DF)\par
+                                                                                                                                tweets.df$text\par
+1                        I find it notable that Trump wants to repeal and replace Obamacare, admitting health care is a need. #TrumpIsALiberal\par
+2                                                And cigarette tax will go to health care for low income communities such as South Central LA \u8252?\u-497?\par
+3 @realDonaldTrump 100 Day Plan without displaying the actual health care plan? Or did I miss something? Point me in the right direction maybe\par
+4    If you're looking for work in #Nashville, TN , check out this #job: {\field{\*\fldinst{HYPERLINK "https://t.co/KH7380qRQb"}}{\fldrslt{\ul\cf1 https://t.co/KH7380qRQb}}}\f0\fs22  #MusicCity #veterans\'85 {\field{\*\fldinst{HYPERLINK "https://t.co/UcjnX11rYh"}}{\fldrslt{\ul\cf1 https://t.co/UcjnX11rYh}}}\f0\fs22\par
+5                                                                         If you're going to grind IW, you don't care about your mental health\par
+6                                                               Chiropractic and Better Health {\field{\*\fldinst{HYPERLINK "https://t.co/qjua7edN1A"}}{\fldrslt{\ul\cf1 https://t.co/qjua7edN1A}}}\f0\fs22  {\field{\*\fldinst{HYPERLINK "https://t.co/72MyseCrwe"}}{\fldrslt{\ul\cf1 https://t.co/72MyseCrwe}}}\f0\fs22\par
+  polarity_classified_df$BEST_FIT\par
+1                        positive\par
+2                         neutral\par
+3                         neutral\par
+4                         neutral\par
+5                        negative\par
+6                        positive\par
+> View(Visual_DF)\par
+> View(Visual_DF)\par
+> head(Visual_DF)\par
+                                                                                                                                tweets.df$text\par
+1                        I find it notable that Trump wants to repeal and replace Obamacare, admitting health care is a need. #TrumpIsALiberal\par
+2                                                And cigarette tax will go to health care for low income communities such as South Central LA \u8252?\u-497?\par
+3 @realDonaldTrump 100 Day Plan without displaying the actual health care plan? Or did I miss something? Point me in the right direction maybe\par
+4    If you're looking for work in #Nashville, TN , check out this #job: {\field{\*\fldinst{HYPERLINK "https://t.co/KH7380qRQb"}}{\fldrslt{\ul\cf1 https://t.co/KH7380qRQb}}}\f0\fs22  #MusicCity #veterans\'85 {\field{\*\fldinst{HYPERLINK "https://t.co/UcjnX11rYh"}}{\fldrslt{\ul\cf1 https://t.co/UcjnX11rYh}}}\f0\fs22\par
+5                                                                         If you're going to grind IW, you don't care about your mental health\par
+6                                                               Chiropractic and Better Health {\field{\*\fldinst{HYPERLINK "https://t.co/qjua7edN1A"}}{\fldrslt{\ul\cf1 https://t.co/qjua7edN1A}}}\f0\fs22  {\field{\*\fldinst{HYPERLINK "https://t.co/72MyseCrwe"}}{\fldrslt{\ul\cf1 https://t.co/72MyseCrwe}}}\f0\fs22\par
+  polarity_classified_df$BEST_FIT\par
+1                        positive\par
+2                         neutral\par
+3                         neutral\par
+4                         neutral\par
+5                        negative\par
+6                        positive\par
+> names(Visual_DF)[1] <- "Tweet"\par
+> names(Visual_DF)[2] <- "Sentiment"\par
+> Visual_DF$title <- "HEALTH CARE"\par
+> Visual_DF$count <- rep(1, nrow(Visual_DF))\par
+> combinedtopic_terms <- sqldf("select * from newtopic_df INNER JOIN topics ON topics.topic = newtopic_df.topic;")\par
+> combinedtopic_terms[4] <- NULL\par
+> newVisual_DF <- cbind(Visual_DF, combinedtopic_terms$term)\par
+> names(newVisual_DF)[5] <- "Topics"\par
+> newVisual_DF$path <- paste(newVisual_DF$title, newVisual_DF$Topic, newVisual_DF$Sentiment, sep="-")\par
+> yellow <- c("#FFFF00")\par
+> blue <- c("#5687d1")\par
+> brown <- c("#7b615c")\par
+> orange <- c("#de783b")\par
+> l_green <- c("#6ab975")\par
+> purple <- c("#a173d1")\par
+> l_yellow <- c("#FFFFCC")\par
+> aqua <- c("#00CC99")\par
+> d_aqua <- c("#009999")\par
+> occur <- c("#CC6600")\par
+> pink <- c("#CC33FF")\par
+> red <- c("#FF3300")\par
+> green <- c("#339900")\par
+> grey <-c("#999999")\par
+> #x= list(c9)\par
+> x=list(yellow, blue , orange , red , grey , green , aqua , d_aqua , occur , purple , l_green , brown , l_yellow , pink)\par
+> typeof(x)\par
+[1] "list"\par
+> head(x)\par
+[[1]]\par
+[1] "#FFFF00"\par
+\par
+[[2]]\par
+[1] "#5687d1"\par
+\par
+[[3]]\par
+[1] "#de783b"\par
+\par
+[[4]]\par
+[1] "#FF3300"\par
+\par
+[[5]]\par
+[1] "#999999"\par
+\par
+[[6]]\par
+[1] "#339900"\par
+\par
+> sunburst(data.frame(xtabs(count~path,newVisual_DF)), colors= x, count = TRUE)\par
+\par
+> \par
+}
+ 
